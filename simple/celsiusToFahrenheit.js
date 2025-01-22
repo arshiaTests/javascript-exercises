@@ -12,4 +12,15 @@
 
 // Write your solution here
 
+
+
+function celsiusToFahrenheit(C) {
+    let F;
+    return F = (C * 1.8) + 32
+
+}
+
+
+console.log(celsiusToFahrenheit(0));
+
 module.exports = celsiusToFahrenheit;
