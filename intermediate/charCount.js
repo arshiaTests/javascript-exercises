@@ -12,4 +12,27 @@
 
 // Write your solution here
 
+
+function Charcount(string, char) {
+
+    let ArrS = string.split('')
+
+    let num = 0;
+    let indexArr = 0
+
+    for (let i = 0; i <= ArrS.length; i++) {
+
+        if (ArrS[indexArr].toLowerCase() === char) {
+            num++
+        }
+        indexArr++;
+
+
+    }
+
+    console.log(num);
+}
+
+Charcount('hello', 'l')
+
 module.exports = charCount;
