@@ -22,7 +22,7 @@ function Charcount(string, char) {
 
     for (let i = 0; i <= ArrS.length; i++) {
 
-        if (ArrS[indexArr].toLowerCase() === char) {
+        if (ArrS[indexArr] === char) {
             num++
         }
         indexArr++;
