@@ -12,4 +12,17 @@
 
 // Write your solution here
 
+function reverseString(txt) {
+
+    let ArrTxt = txt.split('');
+    ArrTxt.reverse();
+
+    let resultReverse = ArrTxt.join('')
+
+    console.log(resultReverse);
+
+}
+
+reverseString('world')
+
 module.exports = reverseString;
