@@ -12,4 +12,25 @@
 
 // Write your solution here
 
+
+
+
+function factorial(num) {
+
+    let x = 1
+    for (let i = num; i >= 1; --i) {
+
+
+
+        x = i * x;
+
+    }
+
+    return x;
+}
+
+
+console.log(factorial(5));
+
+
 module.exports = factorial;
