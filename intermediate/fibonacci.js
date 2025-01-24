@@ -12,4 +12,16 @@
 
 // Write your solution here
 
+function fibonacci(n) {
+    let ArrString = [0, 1]
+
+    for (let i = 2; i < n; i++) {
+        ArrString[i] = ArrString[i - 1] + Arr[i - 2]
+    }
+
+    return ArrString;
+}
+
+fibonacci(3)
+
 module.exports = fibonacci;
