@@ -12,4 +12,35 @@
 
 // Write your solution here
 
+
+function sumArray(...arg) {
+
+    let arr = []
+    let sumArray = 0
+    for (let number of arg) {
+
+        let x = number
+
+        arr.push(x)
+    }
+
+    for (let i = 0; i < arr.length; i++) {
+        sumArray = sumArray + arr[i]
+
+    }
+
+
+
+
+
+    console.log(sumArray);
+
+
+
+}
+
+
+sumArray(1, 2, 3, 4, 5)
+
+
 module.exports = sumArray;
