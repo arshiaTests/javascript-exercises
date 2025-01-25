@@ -12,4 +12,32 @@
 
 // Write your solution here
 
+
+function findDuplicates(...arg) {
+
+    let arr = []
+
+    for (let num of arg) {
+        let x = num
+
+        arr.push(x)
+    }
+
+    let dup = arr.filter(function(num, index) {
+
+        // console.log(num);
+        arr.indexOf(num) !== index
+
+    })
+
+
+
+
+
+}
+
+
+findDuplicates(1, 3, 4, 5, 3, 3, 2)
+
+
 module.exports = findDuplicates;
