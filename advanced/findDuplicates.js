@@ -25,10 +25,13 @@ function findDuplicates(...arg) {
 
     let dup = arr.filter(function(num, index) {
 
-        // console.log(num);
-        arr.indexOf(num) !== index
+        return arr.indexOf(num) !== index
 
     })
+
+    duplicate = [...new Set(dup)]
+
+    console.log(duplicate);
 
 
 
@@ -37,7 +40,7 @@ function findDuplicates(...arg) {
 }
 
 
-findDuplicates(1, 3, 4, 5, 3, 3, 2)
+findDuplicates(1, 3, 4, 3, 2, 1, 4, 2)
 
 
 module.exports = findDuplicates;
