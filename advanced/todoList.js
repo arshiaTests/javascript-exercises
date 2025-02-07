@@ -36,6 +36,8 @@ function removeTask(remove) {
     if (indexOfTask != -1) {
 
         todoList.splice(indexOfTask, 1)
+    } else {
+        console.log('task not found');
     }
 
     console.log(todoList);
