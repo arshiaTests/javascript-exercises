@@ -14,4 +14,43 @@
 
 // Write your solution here
 
+let todoList = ['learning', 'gym', 'uni']
+
+function addTask(newTask) {
+
+    if (newTask == 'number') {
+        console.log('this is number , not like task');
+    } else {
+
+        todoList.push(newTask)
+    }
+    console.log(todoList);
+
+
+}
+
+function removeTask(remove) {
+
+    let indexOfTask = todoList.indexOf(remove)
+
+    if (indexOfTask != -1) {
+
+        todoList.splice(indexOfTask, 1)
+    }
+
+    console.log(todoList);
+}
+
+function showTasks(todoList) {
+
+    console.log(todoList);
+
+
+}
+
+
+addTask('react learnning')
+removeTask('gym')
+showTasks(todoList)
+
 module.exports = { addTask, removeTask, showTasks };
