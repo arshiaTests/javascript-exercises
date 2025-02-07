@@ -18,7 +18,7 @@ let todoList = ['learning', 'gym', 'uni']
 
 function addTask(newTask) {
 
-    if (newTask == 'number') {
+    if (typeof newTask == 'number') {
         console.log('this is number , not like task');
     } else {
 
@@ -41,7 +41,7 @@ function removeTask(remove) {
     console.log(todoList);
 }
 
-function showTasks(todoList) {
+function showTasks() {
 
     console.log(todoList);
 
@@ -51,6 +51,6 @@ function showTasks(todoList) {
 
 addTask('react learnning')
 removeTask('gym')
-showTasks(todoList)
+showTasks()
 
 module.exports = { addTask, removeTask, showTasks };
