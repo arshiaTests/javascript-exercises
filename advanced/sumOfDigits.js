@@ -10,4 +10,27 @@
  * sumOfDigits(987) should return 24 (9 + 8 + 7).
  */
 
+function sumOfDigits(num) {
+
+
+    let arrNum = Array.from(String(num))
+
+    let res = 0;
+
+    arrNum.map(function(x) {
+
+
+        let number = +x;
+
+        res += number
+
+    })
+
+    console.log(res);
+
+
+
+}
+
+sumOfDigits(987)
 module.exports = sumOfDigits;
