@@ -13,5 +13,6 @@ function calculateAverage(num , sum = 0 , index = 0){
     if (index === num.length) return sum / num.length;
     return calculateAverage(num , sum+num[index],index+1)
 }
-console.log(calculateAverage([1,2,3,4]))
+// add changes
+// console.log(calculateAverage([1,2,3,4]))
 module.exports = calculateAverage;
