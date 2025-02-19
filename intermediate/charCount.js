@@ -12,27 +12,13 @@
 
 // Write your solution here
 
-
-function Charcount(string, char) {
-
-    let ArrS = string.split('')
-
-    let num = 0;
-    let indexArr = 0
-
-    for (let i = 0; i <= ArrS.length; i++) {
-
-        if (ArrS[indexArr] === char) {
-            num++
-        }
-        indexArr++;
-
-
-    }
-
-    console.log(num);
+function charCount(str, char) {
+    return [...str].filter(c => c === char).length;
 }
 
-Charcount('hello', 'l')
+console.log(charCount("hello", "l")); 
+console.log(charCount("world", "o")); 
+
+module.exports = charCount;
 
 module.exports = charCount;
