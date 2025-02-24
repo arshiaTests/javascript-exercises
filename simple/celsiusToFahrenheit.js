@@ -11,7 +11,6 @@
  */
 
 // Write your solution here
-let celsiusToFahrenheit=(num) => (num *9/5)+32;
+const celsiusToFahrenheit = (celsius) => (celsius * 1.8) + 32;
 
 module.exports = celsiusToFahrenheit;
-
