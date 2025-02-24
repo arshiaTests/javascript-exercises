@@ -11,7 +11,5 @@
  */
 
 // Write your solution here
-const isPrime = (num) => num < 2 || (num % 2 === 0 && num !==2) ||(num % 3 === 0 && num !==3) ? false 
-    : true
-
+const isPrime = n => n > 1 && [...Array(Math.floor(Math.sqrt(n) - 1)).keys()].every(i => n % (i + 2) !== 0);
 module.exports = isPrime;
